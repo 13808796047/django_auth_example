@@ -103,7 +103,8 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'zh-hans'
 
 TIME_ZONE = 'Asia/Shanghai'
-
+# 为了让 Django 用户认证系统使用我们自定义的用户模型，必须在 settings.py 里通过 AUTH_USER_MODEL 指定自定义用户模型所在的位置，即需要如下设置：
+AUTH_USER_MODEL = 'users.User'
 USE_I18N = True
 
 USE_L10N = True
